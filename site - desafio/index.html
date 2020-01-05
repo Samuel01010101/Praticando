@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Página de Teste</title>
+	<!-- Falta os mais tags meta-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+	<header class="cabecalho">
+		<nav class="menu">
+			<a class="btn-close"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a>
+			<ul>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Menu1</a></li>
+				<li><a href="#">Menu2</a></li>
+				<li><a href="#">Menu3</a></li>
+				<li><a href="#">Menu4</a></li>
+			</ul>
+		</nav>
+		<button class="btn-menu"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+		<div class="inner">
+		<h1>Html e Css</h1>
+		<h2>com um pouco de JQuery</h2>
+		</div>
+	</header>
+	<main class="principal">
+		<section class="texto">
+			<h3>Hello World</h3>
+			<p class="inner-texto">Página feita com o intuito de praticar mais sobre <a href="#">html</a> e <a href="#">css</a></p>
+		</section>
+		<section class="item">
+			<header>
+			<a href=""><img src="img/img01.jpg"></a>
+			</header>
+			<p>Top Sites Para Aprender Programação</p>
+			<a class="button">Veja Mais</a>
+		</section>
+		<section class="item">
+			<header>
+			<a href=""><img src="img/img02.jpg"></a>
+			</header>
+			<p>Cursos Grátis</p>
+			<a class="button">Veja Mais</a>
+		</section>
+	</main>
+	<footer class="rodape">
+		<div class="social-icons">
+			<a href="#"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+		</div>
+		<p>&copy; Todos os Direitos Reservados - 2020</p>
+	</footer>
+	<!--JQUERY-->
+	<script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(".btn-menu").click(function(){
+			$(".menu").show();
+		})
+		$(".btn-close").click(function(){
+			$(".menu").hide();
+		})
+	</script>
+</body>
+</html>
